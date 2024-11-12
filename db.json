@@ -1,0 +1,12 @@
+{
+  "agenda": [
+    {
+      "id": 1,
+      "titulo": "Reunião de trabalho",
+      "descricao": "Reunião com equipe de desenvolvimento",
+      "data": "2024-11-20",
+      "hora": "14:00",
+      "local": "Escritório"
+    }
+  ]
+}
