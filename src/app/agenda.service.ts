@@ -22,6 +22,11 @@ export class AgendaService {
   addAgenda(agenda: Agenda): Observable<Agenda>{
     return this.http.post<Agenda>(this.url, agenda);
   }
+
+  //3ª Função
+  getAgendaById(id: number): Observable<Agenda>{
+    return this.http.get<Agenda>(`${this.url}/${id}`);
+  }
   
   
 }
