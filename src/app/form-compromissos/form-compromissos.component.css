@@ -1,0 +1,4 @@
+.container {
+    max-height: 500px; /* Defina a altura desejada */
+    overflow-y: auto; /* Adicione a barra de rolagem vertical */
+  }

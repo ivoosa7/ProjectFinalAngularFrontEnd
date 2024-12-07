@@ -1,1 +1,51 @@
-<p>form-compromissos works!</p>
+<div class="container">
+    <h1>Registrar compromissos</h1>
+    <form [formGroup]="formGroupAgenda">
+        <div class="mb-3">
+            <label for="titulo" class="form-label">Título do Agendamento</label>
+            <input formControlName="titulo"
+            type="text" 
+            class="form-control" 
+            id="titulo" 
+            placeholder="Título principal do compromisso"
+            required="Titulo">
+        </div>
+        <div class="mb-3">
+            <label for="descricao" class="form-label">Descrição do Agendamento</label>
+            <input formControlName="descricao" 
+            type="text" 
+            class="form-control" 
+            id="descricao" 
+            placeholder="Breve descrição do compromisso"
+            required="Descrição">
+        </div>
+        <div class="mb-3">
+            <label for="data" class="form-label">Data</label>
+            <input formControlName="data" 
+            type="date" 
+            class="form-control" 
+            id="data" 
+            placeholder="Data marcada para o compromisso"
+            required="Data">
+        </div>
+        <div class="mb-3">
+            <label for="hora" class="form-label">Hora</label>
+            <input formControlName="hora" 
+            type="time" 
+            class="form-control" 
+            id="hota" 
+            placeholder="Hora marcada para o compromisso"
+            required="Hora">
+        </div>
+        <div class="mb-3">
+            <label for="local" class="form-label">Local</label>
+            <input formControlName="local" 
+            type="text" 
+            class="form-control" 
+            id="local" 
+            placeholder="Nome do lugar marcado para o compromisso"
+            required="Local">
+        </div>    
+    </form>
+    <button type="button" class="btn btn-success" (click)="salvarCompromisso()">Salvar</button>
+</div>
