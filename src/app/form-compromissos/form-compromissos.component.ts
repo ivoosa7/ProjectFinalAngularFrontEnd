@@ -36,9 +36,15 @@ export class FormCompromissosComponent implements OnInit{
     });
   }
 
-  salvarCompromisso(){
+  saveCompromisso(){
     this.service.addAgenda(this.formGroupAgenda.value).subscribe({
       next: () => this.router.navigate(['compromissos'])
     });
+  }
+
+  updateCompromisso(){
+    this.service.updateAgenda(this.formGroupAgenda.value).subscribe({
+      next: () => this.router.navigate(['compromisso'])
+    })
   }
 }
