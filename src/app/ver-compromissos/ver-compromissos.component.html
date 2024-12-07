@@ -7,17 +7,17 @@
             <th scope="col">Descricao</th>
             <th scope="col">Data</th>
             <th scope="col">Hora</th>
-            <th scope="col">Escritório</th>
+            <th scope="col">local</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row"></th>
-            <th scope="row"></th>
-            <th scope="row"></th>
-            <th scope="row"></th>
-            <th scope="row"></th>
-            <th scope="row"></th>
+          <tr *ngFor="let agenda of VerAgenda">
+            <th scope="row">{{agenda.id}}</th>
+            <th scope="row">{{agenda.titulo}}</th>
+            <th scope="row">{{agenda.descricao}}</th>
+            <th scope="row">{{agenda.data}}</th>
+            <th scope="row">{{agenda.hora}}</th>
+            <th scope="row">{{agenda.local}}</th>
           </tr>
         </tbody>
       </table>
