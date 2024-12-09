@@ -46,7 +46,7 @@
             placeholder="Nome do lugar marcado para o compromisso"
             required="Local">
         </div> 
-        <button type="button" class="btn btn-success" (click)="saveCompromisso()">Salvar</button> 
-        <button type="button" class="btn btn-info" (click)="updateCompromisso()">Alterar</button>  
+        <button *ngIf="!isEditMode" type="button" class="btn btn-success" (click)="saveCompromisso()">Salvar</button> 
+        <button *ngIf="isEditMode" type="button" class="btn btn-info" (click)="updateCompromisso()">Alterar</button>  
     </form>
 </div>

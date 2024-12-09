@@ -10,6 +10,8 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class FormCompromissosComponent implements OnInit{
 
+  isEditMode:boolean = false
+
   formGroupAgenda: FormGroup;
 
   constructor(private service: AgendaService, 
@@ -27,7 +29,10 @@ export class FormCompromissosComponent implements OnInit{
   } 
   ngOnInit(): void {
     const id = Number(this.activeRouter.snapshot.paramMap.get("id"));
-    this.loadAgenda(id);
+    this.isEditMode = id !== 0
+    if(this.isEditMode){
+      this.loadAgenda(id);
+    }
   }
 
   loadAgenda(id: number){
