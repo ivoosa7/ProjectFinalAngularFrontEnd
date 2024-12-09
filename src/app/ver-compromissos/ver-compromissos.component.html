@@ -9,6 +9,7 @@
             <th scope="col">Hora</th>
             <th scope="col">local</th>
             <th scope="col">Alterar</th>
+            <th scope="col">Deletar</th>
           </tr>
         </thead>
         <tbody>
@@ -20,6 +21,7 @@
             <th scope="row">{{agenda.hora}}</th>
             <th scope="row">{{agenda.local}}</th>
             <th scope="row"><button type="button" class="btn btn-primary" (click)="goToUpdate(agenda.id)">Alterar</button></th>
+            <th scope="row"><button type="button" class="btn btn-danger" (click)="deletarAgenda(agenda)">Deletar</button></th>
           </tr>
         </tbody>
       </table>

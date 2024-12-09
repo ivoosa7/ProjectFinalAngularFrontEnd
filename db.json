@@ -13,15 +13,7 @@
       "titulo": "Prova de Economia",
       "descricao": "Prova nesta próxima segunda com o conteúdo passado na última aula sobre juros verticais",
       "data": "2024-12-09",
-      "hora": "11:10",
-      "local": "Fatec Itu, Itu"
-    },
-    {
-      "id": 3,
-      "titulo": "Projeto Programação Web",
-      "descricao": "Aplicar todo o conteúdo aprendido no semestre para criação de um projeto de agendar compromissos",
-      "data": "2024-01-10",
-      "hora": "07:40",
+      "hora": "11:00",
       "local": "Fatec Itu, Itu"
     }
   ]

@@ -32,6 +32,9 @@ export class AgendaService {
   updateAgenda(agenda: Agenda): Observable<Agenda>{
     return this.http.put<Agenda>(`${this.url}/${agenda.id}`, agenda);
   }
-  
-  
+
+  //5ª Função 
+  deleteAgenda(agenda: Agenda): Observable<void>{
+    return this.http.delete<void>(`${this.url}/${agenda.id}`);
+  }
 }

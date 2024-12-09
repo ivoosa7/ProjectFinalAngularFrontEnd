@@ -28,4 +28,10 @@ export class VerCompromissosComponent implements OnInit{
   goToUpdate(id:Number){
     this.router.navigate(['/formcompromissos', id]);
   }
+
+  deletarAgenda(agenda: Agenda){
+    this.service.deleteAgenda(agenda).subscribe({
+      next: () => this.LoadAgenda()
+    });
+  }
 }
