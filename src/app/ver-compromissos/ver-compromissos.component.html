@@ -8,6 +8,7 @@
             <th scope="col">Data</th>
             <th scope="col">Hora</th>
             <th scope="col">local</th>
+            <th scope="col">Alterar</th>
           </tr>
         </thead>
         <tbody>
@@ -18,6 +19,7 @@
             <th scope="row">{{agenda.data}}</th>
             <th scope="row">{{agenda.hora}}</th>
             <th scope="row">{{agenda.local}}</th>
+            <th scope="row"><button type="button" class="btn btn-primary" (click)="goToUpdate(agenda.id)">Alterar</button></th>
           </tr>
         </tbody>
       </table>

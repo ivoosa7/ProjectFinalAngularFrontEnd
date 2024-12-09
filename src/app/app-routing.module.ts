@@ -7,7 +7,8 @@ import { FormCompromissosComponent } from './form-compromissos/form-compromissos
 const routes: Routes = [
   {path: 'Home', component: HomeComponent},
   {path: 'compromissos', component: VerCompromissosComponent},
-  {path: 'formcompromissos', component:FormCompromissosComponent}
+  {path: 'formcompromissos', component:FormCompromissosComponent},
+  {path: 'formcompromissos/:id', component:FormCompromissosComponent}
 ];
 
 @NgModule({

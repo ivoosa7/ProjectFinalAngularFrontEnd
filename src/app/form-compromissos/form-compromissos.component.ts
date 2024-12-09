@@ -44,7 +44,7 @@ export class FormCompromissosComponent implements OnInit{
 
   updateCompromisso(){
     this.service.updateAgenda(this.formGroupAgenda.value).subscribe({
-      next: () => this.router.navigate(['compromisso'])
+      next: () => this.router.navigate(['compromissos'])
     })
   }
 }
