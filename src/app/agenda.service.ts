@@ -9,7 +9,7 @@ import { Agenda } from './Agenda';
 export class AgendaService {
 
 
-  url = 'http://localhost:3000/agenda'
+  url = 'http://localhost:8080/compromissos'
 
   constructor(private http: HttpClient) { }
 
